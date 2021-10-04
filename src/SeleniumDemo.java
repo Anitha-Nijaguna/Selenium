@@ -1,5 +1,3 @@
-package scripts;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -24,11 +22,6 @@ public class SeleniumDemo {
 
         System.out.println(driver.getTitle());
         System.out.println(driver.getCurrentUrl());
-
-        /*driver.findElement(By.id("identifierId")).sendKeys("anithanijaguna");
-        driver.findElement(By.xpath("//span[contains(text(),'Next')]")).click();
-        driver.findElement(By.className("whsOnd zHQkBf")).sendKeys("Ganesha@143");
-        driver.findElement(By.xpath("//span[contains(text(),'Next')]")).click(); */
 
         //close browser
         driver.close();
