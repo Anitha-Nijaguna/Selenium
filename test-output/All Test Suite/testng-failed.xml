@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [All Test Suite]" parallel="tests">
+  <test thread-count="5" name="TestGC(failed)" parallel="tests">
+    <parameter name="browser" value="GC"/>
+    <classes>
+      <class name="scripts.AddCustomer">
+        <methods>
+          <include name="preCondition"/>
+          <include name="testAddCustomer"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- scripts.AddCustomer -->
+    </classes>
+  </test> <!-- TestGC(failed) -->
+  <test thread-count="5" name="TestFF(failed)" parallel="tests">
+    <parameter name="browser" value="FF"/>
+    <classes>
+      <class name="scripts.AddCustomer">
+        <methods>
+          <include name="preCondition"/>
+          <include name="testAddCustomer"/>
+          <include name="postCondition"/>
+        </methods>
+      </class> <!-- scripts.AddCustomer -->
+    </classes>
+  </test> <!-- TestFF(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->
