@@ -1,5 +1,3 @@
-package scripts;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -9,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import scripts.ScreenShot;
 
 import java.io.IOException;
 
@@ -26,7 +25,7 @@ public class ExtentReport {
 
         extent.setSystemInfo("Company Name", "Scripting Logic");
         extent.setSystemInfo("Project Name", "HRM");
-        extent.setSystemInfo("Testers Name", "Anitha Nijaguna");
+        extent.setSystemInfo("Testers Name", "AnithaNijaguna");
         extent.setSystemInfo("Test Lead", "Ramesh");
     }
 
